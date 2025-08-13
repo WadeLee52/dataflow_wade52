@@ -1,7 +1,8 @@
 # 從 Airflow 的 operators 模組中引入 BashOperator，用於執行 Bash 指令
-from airflow.operators.bash_operator import (
+from airflow.operators.bash import (
     BashOperator,
 )
+
 
 
 # 定義一個函數 create_bash_operator_task，回傳一個 BashOperator 物件

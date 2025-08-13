@@ -1,7 +1,5 @@
 # 匯入 PythonOperator，用於在 DAG 中執行 Python 函式
-from airflow.operators.python_operator import (
-    PythonOperator,
-)
+from airflow.operators.python import PythonOperator
 
 
 # 定義一個簡單的 Python 函式，作為任務執行內容

@@ -1,7 +1,8 @@
 # 從 Airflow 匯入 DockerOperator，用來在 DAG 中執行 Docker 容器任務
-from airflow.operators.docker_operator import (
+from airflow.providers.docker.operators.docker import (
     DockerOperator,
 )
+
 
 
 # 建立一個 DockerOperator 任務的函式，回傳一個 Airflow 的任務實例

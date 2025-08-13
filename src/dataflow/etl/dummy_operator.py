@@ -1,7 +1,5 @@
 # 匯入 Airflow 中的 PythonOperator，可用來執行自定義的 Python 函式
-from airflow.operators.python_operator import (
-    PythonOperator,
-)
+from airflow.operators.python import PythonOperator
 
 
 # 定義 crawler1 任務，會在 DAG 中顯示為 task_id = "crawler1"

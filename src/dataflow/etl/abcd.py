@@ -1,7 +1,6 @@
 # 匯入 PythonOperator，這是 Airflow 中用來執行 Python 函式的 operator
-from airflow.operators.python_operator import (
-    PythonOperator,
-)
+from airflow.operators.python import PythonOperator
+
 
 
 # 建立一個名為 a 的任務，執行時會印出 "a"

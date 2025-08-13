@@ -1,11 +1,14 @@
 # 匯入 Airflow 所需的 Operators
-from airflow.operators.dummy_operator import (
-    DummyOperator,
-)  # 用於建立空的佔位任務
-from airflow.operators.python_operator import (
-    BranchPythonOperator,  # 用於條件分支邏輯
-    PythonOperator,  # 用於執行 Python 函式
+from airflow.operators.empty import (
+    EmptyOperator,          # 取代舊的 DummyOperator
 )
+from airflow.operators.branch import (
+    BranchPythonOperator,   # 2.x 新路徑
+)
+from airflow.operators.python import (
+    PythonOperator,         # 2.x 新路徑
+)
+
 
 
 # 建立一個 DummyOperator 任務，用於「跳過」的情境
